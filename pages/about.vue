@@ -6,10 +6,20 @@
       ratione quia consequatur reiciendis similique, facilis quae unde?
       Assumenda, laboriosam?
     </p>
+    <p>api response:</p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// const { data } = await useFetch("/api/ninja?name=mike");
+// const { data } = await useFetch("/api/ninja?name=supermike", {
+//   method: "post",
+//   body: { age: 30 },
+// });
+
+const { data } = await useFetch("/api/ninja");
+</script>
 
 <style scoped>
 h2 {
